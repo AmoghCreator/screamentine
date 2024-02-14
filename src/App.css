@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.pic1 {
+  animation: invert .1s infinite;
+}
+
+.pic2 {
+	animation: seizure .2s infinite;
+}
+
+.pic3 {
+	animation: rotate .13s infinite;
+}
+
+@keyframes seizure {
+  50% {
+    filter:invert(100%);
+}
+}
+
+@keyframes invert{
+	  0%{
+		  transform: skew(0deg, -20deg);
+	  }
+  100% {
+	  transform: skew(0deg, 20deg);
+}
+}
+
+@keyframes rotate {
+  0% {
+    transform: scale(10%);
+  }
+  100% {
+    transform: rotate(100%);
+  }
+}
